@@ -13,4 +13,5 @@ Matpower: matpower6.0
 <b>How to run:</b>
 - Make sure that the matpower6.0 folder is in the same directory as the "SystemModel" folder and that the case24_ieee_rts_alpha.m file is with the matpower6.0 folder.
 - Run the SystemModel.java program with the "SystemModel" folder and this will also start MATLAB.
+  - Choose option for which violations to catch. Option "4" (Voltage and branch power violations) was option used for data.
 - Run the commandTranslation.py program within the "IEC104Command with socket" folder
