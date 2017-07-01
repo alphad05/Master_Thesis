@@ -1,0 +1,28 @@
+--cutoff--
+IOA = 1
+	fbus: 1
+	tbus: 2
+IOA = 2
+	fbus: 2
+	tbus: 4
+
+IOA = 13
+	fbus: 13
+	tbus: 11
+IOA = 14
+	fbus: 14
+	tbus: 16
+
+--ramp--
+IOA = 1
+
+IOA = 12
+
+--set_point--
+IOA = 1
+
+IOA = 3
+
+IOA = 12
+
+IOA = 14
