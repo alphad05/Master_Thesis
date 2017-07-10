@@ -22,7 +22,6 @@ mpc.branch(indxs,branchStatusColumn) = vals(1,3);
 
 %check for islands in mpc after changing status of branch
 %change bus type back to what it was before finding new isolated
-%This is new code added, if the java model does not work remove it
 mpc.bus(:,BUS_TYPE) = busTypes;
 [groups,isol] = find_islands(mpc)
 isolatedSize = size(isol)
