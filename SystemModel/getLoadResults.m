@@ -1,7 +1,5 @@
 critSize = size(criticalComps);
 cBusInfo = zeros(critSize(2),3);
-%change load power to per unit
-%results.bus(:,(3)) = results.bus(:,(3))/100;
 for crit=1:critSize(2)
     cBus = criticalComps(crit);
     %find index of bus in the results.bus structure
