@@ -3,8 +3,7 @@ multiplier = 1000.0;
 %get the injected power into the branch
 fprintf('Branch Violations \nFrom  To  Status  Power   Limit \n');
 maxLineInjection = max(abs(results.branch(:,PF)), abs(results.branch(:,PT)));
-%find which branches violates limits, using rate b as the limit. Need to
-%work on finding branch violations more
+%find which branches violates limits, using rate b as the limit. 
 branchLimViolationIndices = find(abs(round(maxLineInjection(:,1)*multiplier)/multiplier) > (results.branch(:,RATE_B)+tolerance) & results.branch(:,RATE_B) > 0);
 for k=1:length(branchLimViolationIndices)
     %from to status power limit
