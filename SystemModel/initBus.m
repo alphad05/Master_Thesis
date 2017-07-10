@@ -1,8 +1,6 @@
 critSize = size(criticalComps);
 cBusInitLoads = zeros(critSize(2),7); %change size
 %[ [bus, bus voltage, max bus voltage, min bus voltage, load power, basekV, base load Power] ]
-%change load to per unit
-%mpc.bus(:,(3)) = mpc.bus(:,(3))/100;
 for crit=1:critSize(2)
     cBus = criticalComps(crit);
     %find index of bus in the mpc.bus structure
